@@ -1,0 +1,130 @@
+DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B3AN PROTOCOL // SECURE GATEWAY</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #050505; /* Deep Black */
+            color: #00FF41; /* Hacker Green */
+            font-family: 'Share Tech Mono', monospace;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 3rem;
+            letter-spacing: 5px;
+            color: #00FFFF; /* Cyan */
+            text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .status-line {
+            color: #555;
+            font-size: 0.9rem;
+            margin-bottom: 40px;
+        }
+
+        .container {
+            border: 1px solid #333;
+            padding: 40px;
+            max-width: 600px;
+            background: rgba(0, 20, 0, 0.3);
+            box-shadow: 0 0 20px rgba(0, 255, 65, 0.1);
+            text-align: center;
+        }
+
+        p.brief {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            color: #ccc;
+        }
+
+        .btn {
+            display: inline-block;
+            background: transparent;
+            color: #00FF41;
+            border: 2px solid #00FF41;
+            padding: 15px 30px;
+            font-family: 'Orbitron', sans-serif;
+            font-weight: bold;
+            font-size: 1rem;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: #00FF41;
+            color: #000;
+            box-shadow: 0 0 15px #00FF41;
+        }
+
+        .footer {
+            margin-top: 50px;
+            font-size: 0.7rem;
+            color: #444;
+        }
+
+        /* SCANLINE EFFECT */
+        .scanline {
+            width: 100%;
+            height: 100px;
+            z-index: 10;
+            background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0, 255, 65, 0.05) 50%, rgba(0,0,0,0) 100%);
+            opacity: 0.1;
+            position: absolute;
+            bottom: 100%;
+            animation: scanline 10s linear infinite;
+            pointer-events: none;
+        }
+
+        @keyframes scanline {
+            0% { bottom: 100%; }
+            100% { bottom: -100%; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="scanline"></div>
+
+    <div class="status-line">
+        :: SYSTEM SECURE :: NODE VERIFIED :: ENCRYPTION: POST-QUANTUM
+    </div>
+
+    <h1>B3AN PROTOCOL</h1>
+
+    <div class="container">
+        <p class="brief">
+            You have reached the secure gateway for the B3AN Geometric Infrastructure.
+            <br><br>
+            Our technology utilizes physics-based latency verification to create a
+            quantum-resistant defense grid for high-speed data transmission.
+        </p>
+
+        <a href="B3AN_Protocol_Whitepaper.pdf" class="btn" download>
+            [ DOWNLOAD TECHNICAL DOSSIER ]
+        </a>
+    </div>
+
+    <div class="footer">
+        © 2026 B3AN PROTOCOL // CLASSIFIED TRL-9 // AUTHORIZED PERSONNEL ONLY
+    </div>
+
+</body>
+</html>
